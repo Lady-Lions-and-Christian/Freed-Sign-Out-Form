@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FHU - Dorm Sign Out Form</title>
+    <link href="output.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,20 +18,20 @@
             <h2>Personal Information</h2>
             <!-- name -->
             <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300" ><br>
             <!-- gender -->
             <label for="gender">Gender:</label><br>
-            <select name="gender" id="gender_select">
+            <select name="gender" id="gender_select" class="bg-gray-50 border border-gray-300" >
                 <option value="none"></option>
                 <option value="male">Male</option>
                 <option value="female">female</option>
             </select><br>
             <!-- phone # -->
             <label for= "phone">Phone:</label><br>
-            <input type="text" id="phone" name="phone"><br>
+            <input type="text" id="phone" name="phone" class="bg-gray-50 border border-gray-300" ><br>
             <!-- dorm -->
             <label for="dorm">Dorm:</label><br>
-            <select name="dorm" id="dorm_select">
+            <select name="dorm" id="dorm_select" class="bg-gray-50 border border-gray-300" >
                 <option value="none"></option>
                 <option value="scott">Scott Hall</option>
                 <option value="dixon">Dixon Hall</option>
@@ -46,20 +47,20 @@
             </select><br>
             <!-- room # -->
             <label for="rnumber">Room Number:</label><br>
-            <input type="text" id="rnumber" name="rnumber"><br>
+            <input type="text" id="rnumber" name="rnumber" class="bg-gray-50 border border-gray-300" ><br>
         </section>
     
         <section class="emergency_info">
             <h2>Emergency Contact Information</h2>
             <!-- name -->
             <label for="cname">Contact Name:</label><br>
-            <input type="text" id="cname" name="cname"><br>
+            <input type="text" id="cname" name="cname" class="bg-gray-50 border border-gray-300" ><br>
             <!-- phone # -->
             <label for= "cphone"> Contact Phone:</label><br>
-            <input type="text" id="cphone" name="cphone"><br>
+            <input type="text" id="cphone" name="cphone" class="bg-gray-50 border border-gray-300" ><br>
             <!-- relationship -->
             <label for= "crelationship">Relationship with Person:</label><br>
-            <input type="text" id="crelationship" name="crelationship"><br>
+            <input type="text" id="crelationship" name="crelationship" class="bg-gray-50 border border-gray-300" ><br>
     
             <!-- add another button -->
             
@@ -69,23 +70,23 @@
             <h2>Traveling Information</h2>
             <!-- place -->
             <label for= "vplace">Place:</label><br>
-            <input type="text" id="vplace" name="vplace"><br>
+            <input type="text" id="vplace" name="vplace" class="bg-gray-50 border border-gray-300" ><br>
             <!-- address -->
             <label for= "vaddress">Address:</label><br>
-            <input type="text" id="vaddress" name="vaddress"><br>
+            <input type="text" id="vaddress" name="vaddress" class="bg-gray-50 border border-gray-300" ><br>
             <!-- person visiting -->
             <label for= "vperson">Person Visiting:</label><br>
-            <input type="text" id="vperson" name="vperson"><br>
+            <input type="text" id="vperson" name="vperson" class="bg-gray-50 border border-gray-300" ><br>
             <!-- person phone # -->
             <label for= "vphone">Person's Phone:</label><br>
-            <input type="text" id="vphone" name="vphone"><br>
+            <input type="text" id="vphone" name="vphone" class="bg-gray-50 border border-gray-300" ><br>
     
             <!-- calendar for leaving --> 
         </section>
     </form>
 
     <form action="/confirmationpage.html">
-        <button type="submit">Submit</button>
+        <button type="submit" class="bg-gray-50 border border-gray-300" >Submit</button>
      </form>
     <footer>
 
