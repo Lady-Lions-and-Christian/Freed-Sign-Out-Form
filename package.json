@@ -1,0 +1,22 @@
+{
+  "name": "freed-sign-out-form",
+  "version": "1.0.0",
+  "description": "A new and improved sign-out sheet for Freed-Hardeman students.",
+  "main": "scripts.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i input.css -o output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lady-Lions-and-Christian/Freed-Sign-Out-Form.git"
+  },
+  "author": "LLaC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lady-Lions-and-Christian/Freed-Sign-Out-Form/issues"
+  },
+  "homepage": "https://github.com/Lady-Lions-and-Christian/Freed-Sign-Out-Form#readme",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
