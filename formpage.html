@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FHU - Dorm Sign Out Form</title>
     <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="bg-[url('images/clock.jpg')] bg-no-repeat bg-cover h-screen">
-<div class="dim-overlay bg-amber-950 bg-opacity-30">
-    <h1 class="font-bold text-3xl text-white p-5">Freed-Hardeman Sign Out</h1>
-    <header>
-        <!-- logo -->
+<body class="bg-[url('images/clock.jpg')] bg-no-repeat bg-cover bg-fixed h-screen">
+<header class="header bg-white flex justify-between items-center text-xl p-5">
+    <div>
+        <img src="images/logo.png" class="w-28" />
+    </div>
+    <div class="flex space-x-5">
+        <p>Account</p>
+        <p>Log Out</p>
+    </div>
         <!-- dorm contact info -->
         <!-- account info -->
-    </header>
-    <section class="entire-form bg-white w-[60rem] m-auto rounded-xl">
-        <form action="" id="signout">
+</header>
+<div class="dim-overlay bg-amber-950 bg-opacity-30">
+    <h1 class="font-bold text-3xl text-white p-8">Freed-Hardeman Sign Out</h1>
+    <section class="entire-form bg-white w-[60rem] mx-auto rounded-xl">
+        <h1 class="text-3xl p-8">Sign Out Form</h1>
+        <p class="border-b-2 mx-10"></p>
+        <form action="" id="signout" class="mx-20">
             <section class="personal-info-emergency-section flex flex-col justify-between md:flex-row my-10">
                 <section class="personal_info mb-10 md:mb-0 mx-10 space-y-3">
                     <h2 class="text-2xl my-5 space-x-3">Personal Information</h2>
@@ -94,7 +103,7 @@
                 </section>
         
             <section class="traveling-calendar flex flex-col justify-between md:flex-row my-10">
-                <section class="traveling_info mx-10 space-y-3">
+                <section class="traveling_info mx-10 space-y-3 w-1/2">
                     <h2 class="text-2xl my-5">Traveling Information</h2>
                     <!-- place -->
                     <div>
@@ -118,10 +127,10 @@
                     </div>
             
                 </section>
-                <section class="mx-10">
-                    
+                <section class="m-10 w-1/2">
                     <!-- calendar for leaving -->  
-                    <p></p>
+                    <h2 class="text-2xl my-5">Calendar</h2>
+                    <p>(in progress)</p>
                 </section>
             </section>
         </form>    
@@ -133,5 +142,6 @@
         </div>
     </section>
 </div>
+<div class="pt-10"></div>
 </body>
 </html>
