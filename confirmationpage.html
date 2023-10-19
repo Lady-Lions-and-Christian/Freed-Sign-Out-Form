@@ -11,8 +11,26 @@
         <img src="images/logo.png" class="w-28 mb-5">
         <div>
             <h1 class="text-2xl text-center mb-5">You're Form has been Submitted!</h1>
+            <h1>We recived this from you:</h1>
+            <div id="user-data"></div>
             <h3 class="text-center text-xs">You will receive a copy of the answers for your form through your email. You can now leave the page safely.</h3>
         </div>
     </div>
+    <script>
+        const jsonForm = localStorage.getItem("form");
+        const objForm = JSON.parse(jsonForm);
+
+        for (key in objForm){
+            const markup =
+            `<div>
+                <span>
+                    ${key}: ${objForm[key]}
+                </span>
+            </div>`;
+            
+            document.getElementById("user-data").innerHTML += markup;
+
+        }
+    </script>
 </body>
 </html>
