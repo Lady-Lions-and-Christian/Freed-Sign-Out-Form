@@ -13,47 +13,45 @@
         <!-- account info -->
     </header>
 
-    <section class="entire-page mx-20">
-    <form action="" id="signout">
-        <section class="personal-info-emergency-section flex justify-between my-10">
-            <section class="personal_info">
-                <h2 class="text-2xl mt-5 mb-2">Personal Information</h2>
-                <!-- name -->
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300" ><br>
-                <!-- gender -->
-                <label for="gender">Gender:</label><br>
-                <select name="gender" id="gender_select" class="bg-gray-50 border border-gray-300" >
-                    <option value="none"></option>
-                    <option value="male">Male</option>
-                    <option value="female">female</option>
-                </select><br>
-                <!-- phone # -->
-                <label for= "phone">Phone:</label><br>
-                <input type="text" id="phone" name="phone" class="bg-gray-50 border border-gray-300" ><br>
-                <!-- dorm -->
-                <label for="dorm">Dorm:</label><br>
-                <select name="dorm" id="dorm_select" class="bg-gray-50 border border-gray-300" >
-                    <option value="none"></option>
-                    <option value="scott">Scott Hall</option>
-                    <option value="dixon">Dixon Hall</option>
-                    <option value="bradfield">Bradfield Hall</option>
-                    <option value="porter-terry">Porter-Terry Hall</option>
-                    <option value="tyler">Tyler Hall</option>
-                    <option value="benson">Benson Hall</option>
-                    <option value="farrow">Farrow Hall</option>
-                    <option value="sewell">Sewell Hall</option>
-                    <option value="paul-grey">Paul-Grey Hall</option>
-                    <option value="wooods-east">Woods-East</option>
-                    
-                </select><br>
-                <!-- room # -->
-                <label for="rnumber">Room Number:</label><br>
-                <input type="text" id="rnumber" name="rnumber" class="bg-gray-50 border border-gray-300" ><br>
-            </section>
-        
-            <section class="flex justify-between">
-                <section class="emergency_info">
+    <section class="entire-page w-[50rem] m-auto">
+        <form action="" id="signout">
+            <section class="personal-info-emergency-section flex flex-col justify-between md:flex-row my-10">
+                <section class="personal_info mb-10 md:mb-0 mx-10">
+                    <h2 class="text-2xl mt-5 mb-2">Personal Information</h2>
+                    <!-- name -->
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300" ><br>
+                    <!-- gender -->
+                    <label for="gender">Gender:</label><br>
+                    <select name="gender" id="gender_select" class="bg-gray-50 border border-gray-300" >
+                        <option value="none"></option>
+                        <option value="male">Male</option>
+                        <option value="female">female</option>
+                    </select><br>
+                    <!-- phone # -->
+                    <label for= "phone">Phone:</label><br>
+                    <input type="text" id="phone" name="phone" class="bg-gray-50 border border-gray-300" ><br>
+                    <!-- dorm -->
+                    <label for="dorm">Dorm:</label><br>
+                    <select name="dorm" id="dorm_select" class="bg-gray-50 border border-gray-300" >
+                        <option value="none"></option>
+                        <option value="scott">Scott Hall</option>
+                        <option value="dixon">Dixon Hall</option>
+                        <option value="bradfield">Bradfield Hall</option>
+                        <option value="porter-terry">Porter-Terry Hall</option>
+                        <option value="tyler">Tyler Hall</option>
+                        <option value="benson">Benson Hall</option>
+                        <option value="farrow">Farrow Hall</option>
+                        <option value="sewell">Sewell Hall</option>
+                        <option value="paul-grey">Paul-Grey Hall</option>
+                        <option value="wooods-east">Woods-East</option>
+                        
+                    </select><br>
+                    <!-- room # -->
+                    <label for="rnumber">Room Number:</label><br>
+                    <input type="text" id="rnumber" name="rnumber" class="bg-gray-50 border border-gray-300"  ><br>
+                </section>
+                <section class="emergency_info mx-10">
                     <h2 class="text-2xl mt-5 mb-2">Emergency Contact Information</h2>
                     <!-- name -->
                     <label for="cname">Contact Name:</label><br>
@@ -69,36 +67,36 @@
                     
                 </section>
             </section>
-        </section>
-    
-        <section class="traveling-calendar flex justify-between my-10">
-            <section class="traveling_info">
-                <h2 class="text-2xl mt-5 mb-2">Traveling Information</h2>
-                <!-- place -->
-                <label for= "vplace">Place:</label><br>
-                <input type="text" id="vplace" name="vplace" class="bg-gray-50 border border-gray-300" ><br>
-                <!-- address -->
-                <label for= "vaddress">Address:</label><br>
-                <input type="text" id="vaddress" name="vaddress" class="bg-gray-50 border border-gray-300" ><br>
-                <!-- person visiting -->
-                <label for= "vperson">Person Visiting:</label><br>
-                <input type="text" id="vperson" name="vperson" class="bg-gray-50 border border-gray-300" ><br>
-                <!-- person phone # -->
-                <label for= "vphone">Person's Phone:</label><br>
-                <input type="text" id="vphone" name="vphone" class="bg-gray-50 border border-gray-300" ><br>
         
+            <section class="traveling-calendar flex flex-col justify-between md:flex-row my-10">
+                <section class="traveling_info mx-10">
+                    <h2 class="text-2xl mt-5 mb-2">Traveling Information</h2>
+                    <!-- place -->
+                    <label for= "vplace">Place:</label><br>
+                    <input type="text" id="vplace" name="vplace" class="bg-gray-50 border border-gray-300" ><br>
+                    <!-- address -->
+                    <label for= "vaddress">Address:</label><br>
+                    <input type="text" id="vaddress" name="vaddress" class="bg-gray-50 border border-gray-300" ><br>
+                    <!-- person visiting -->
+                    <label for= "vperson">Person Visiting:</label><br>
+                    <input type="text" id="vperson" name="vperson" class="bg-gray-50 border border-gray-300" ><br>
+                    <!-- person phone # -->
+                    <label for= "vphone">Person's Phone:</label><br>
+                    <input type="text" id="vphone" name="vphone" class="bg-gray-50 border border-gray-300" ><br>
+            
+                </section>
+                <section class="mx-10">
+                    
+                    <!-- calendar for leaving -->  
+                    <p></p>
+                </section>
             </section>
-            <section>
-                <!-- calendar for leaving -->  
-                <p></p>
-            </section>
-        </section>
-    </form>    
+        </form>    
     </section>
 
     <div class="flex justify-center">
         <form action="/confirmationpage.html">
-            <button type="submit" class="bg-gray-50 border border-gray-300 my-5" >Submit</button>
+            <button type="submit" class="bg-gray-50 border border-gray-300 my-5 p-5 px-10" >Submit</button>
         </form>
     </div>
     <footer>
