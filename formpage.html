@@ -6,83 +6,116 @@
     <title>FHU - Dorm Sign Out Form</title>
     <link href="output.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-[url('images/clock.jpg')] bg-no-repeat bg-cover h-screen">
+<div class="dim-overlay bg-amber-950 bg-opacity-30">
+    <h1 class="font-bold text-3xl text-white p-5">Freed-Hardeman Sign Out</h1>
     <header>
         <!-- logo -->
         <!-- dorm contact info -->
         <!-- account info -->
     </header>
-
-    <section class="entire-page w-[50rem] m-auto">
+    <section class="entire-form bg-white w-[60rem] m-auto rounded-xl">
         <form action="" id="signout">
             <section class="personal-info-emergency-section flex flex-col justify-between md:flex-row my-10">
-                <section class="personal_info mb-10 md:mb-0 mx-10">
-                    <h2 class="text-2xl mt-5 mb-2">Personal Information</h2>
+                <section class="personal_info mb-10 md:mb-0 mx-10 space-y-3">
+                    <h2 class="text-2xl my-5 space-x-3">Personal Information</h2>
                     <!-- name -->
-                    <label for="name">Full Name:</label><br>
-                    <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300" ><br>
+                    <div>
+                        <label for="name">Full Name</label><br>
+                        <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300" ><br>
+                    </div>
+
                     <!-- gender -->
-                    <label for="gender">Gender:</label><br>
-                    <select name="gender" id="gender_select" class="bg-gray-50 border border-gray-300" >
-                        <option value="none"></option>
-                        <option value="male">Male</option>
-                        <option value="female">female</option>
-                    </select><br>
+                    <div>
+                        <label for="gender">Gender</label><br>
+                        <select name="gender" id="gender_select" class="bg-gray-50 border border-gray-300" >
+                            <option value="none"></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select><br>
+                    </div>
+
                     <!-- phone # -->
-                    <label for= "phone">Phone:</label><br>
-                    <input type="text" id="phone" name="phone" class="bg-gray-50 border border-gray-300" ><br>
+                    <div>
+                        <label for= "phone">Phone</label><br>
+                        <input type="text" id="phone" name="phone" class="bg-gray-50 border border-gray-300" ><br>
+                    </div>
+
                     <!-- dorm -->
-                    <label for="dorm">Dorm:</label><br>
-                    <select name="dorm" id="dorm_select" class="bg-gray-50 border border-gray-300" >
-                        <option value="none"></option>
-                        <option value="scott">Scott Hall</option>
-                        <option value="dixon">Dixon Hall</option>
-                        <option value="bradfield">Bradfield Hall</option>
-                        <option value="porter-terry">Porter-Terry Hall</option>
-                        <option value="tyler">Tyler Hall</option>
-                        <option value="benson">Benson Hall</option>
-                        <option value="farrow">Farrow Hall</option>
-                        <option value="sewell">Sewell Hall</option>
-                        <option value="paul-grey">Paul-Grey Hall</option>
-                        <option value="wooods-east">Woods-East</option>
-                        
-                    </select><br>
+                    <div>
+                        <label for="dorm">Dorm</label><br>
+                        <select name="dorm" id="dorm_select" class="bg-gray-50 border border-gray-300" >
+                            <option value="none"></option>
+                            <option value="scott">Scott Hall</option>
+                            <option value="dixon">Dixon Hall</option>
+                            <option value="bradfield">Bradfield Hall</option>
+                            <option value="porter-terry">Porter-Terry Hall</option>
+                            <option value="tyler">Tyler Hall</option>
+                            <option value="benson">Benson Hall</option>
+                            <option value="farrow">Farrow Hall</option>
+                            <option value="sewell">Sewell Hall</option>
+                            <option value="paul-grey">Paul-Grey Hall</option>
+                            <option value="wooods-east">Woods-East</option>
+                            
+                        </select><br>
+                    </div>
+                    
                     <!-- room # -->
-                    <label for="rnumber">Room Number:</label><br>
-                    <input type="text" id="rnumber" name="rnumber" class="bg-gray-50 border border-gray-300"  ><br>
+                    <div>
+                        <label for="rnumber">Room Number</label><br>
+                        <input type="text" id="rnumber" name="rnumber" class="bg-gray-50 border border-gray-300"  ><br>
+                    </div>
                 </section>
-                <section class="emergency_info mx-10">
-                    <h2 class="text-2xl mt-5 mb-2">Emergency Contact Information</h2>
+
+                <section class="emergency_info mx-10 space-y-3">
+                    <h2 class="text-2xl my-5">Emergency Contact Information</h2>
+
                     <!-- name -->
-                    <label for="cname">Contact Name:</label><br>
-                    <input type="text" id="cname" name="cname" class="bg-gray-50 border border-gray-300" ><br>
+                    <div>
+                        <label for="cname">Contact Name</label><br>
+                        <input type="text" id="cname" name="cname" class="bg-gray-50 border border-gray-300" ><br>
+                    </div>
+
                     <!-- phone # -->
-                    <label for= "cphone"> Contact Phone:</label><br>
-                    <input type="text" id="cphone" name="cphone" class="bg-gray-50 border border-gray-300" ><br>
+                    <div>
+                        <label for= "cphone"> Contact Phone</label><br>
+                        <input type="text" id="cphone" name="cphone" class="bg-gray-50 border border-gray-300" ><br>
+                    </div>
+
                     <!-- relationship -->
-                    <label for= "crelationship">Relationship with Person:</label><br>
-                    <input type="text" id="crelationship" name="crelationship" class="bg-gray-50 border border-gray-300" ><br>
+                    <div>
+                        <label for= "crelationship">Relationship with Person</label><br>
+                        <input type="text" id="crelationship" name="crelationship" class="bg-gray-50 border border-gray-300" ><br>
+                    </div>
             
                     <!-- add another button -->
                     
+                    </section>
                 </section>
-            </section>
         
             <section class="traveling-calendar flex flex-col justify-between md:flex-row my-10">
-                <section class="traveling_info mx-10">
-                    <h2 class="text-2xl mt-5 mb-2">Traveling Information</h2>
+                <section class="traveling_info mx-10 space-y-3">
+                    <h2 class="text-2xl my-5">Traveling Information</h2>
                     <!-- place -->
-                    <label for= "vplace">Place:</label><br>
-                    <input type="text" id="vplace" name="vplace" class="bg-gray-50 border border-gray-300" ><br>
+                    <div>
+                        <label for= "vplace">Place</label><br>
+                        <input type="text" id="vplace" name="vplace" class="bg-gray-50 border border-gray-300" ><br>
+                    </div>
                     <!-- address -->
-                    <label for= "vaddress">Address:</label><br>
-                    <input type="text" id="vaddress" name="vaddress" class="bg-gray-50 border border-gray-300" ><br>
+                    <div>
+                        <label for= "vaddress">Address</label><br>
+                        <input type="text" id="vaddress" name="vaddress" class="bg-gray-50 border border-gray-300" ><br>
+                    </div>
                     <!-- person visiting -->
-                    <label for= "vperson">Person Visiting:</label><br>
-                    <input type="text" id="vperson" name="vperson" class="bg-gray-50 border border-gray-300" ><br>
+                    <div>
+                        <label for= "vperson">Person Visiting</label><br>
+                        <input type="text" id="vperson" name="vperson" class="bg-gray-50 border border-gray-300" ><br>
+                    </div>
                     <!-- person phone # -->
-                    <label for= "vphone">Person's Phone:</label><br>
-                    <input type="text" id="vphone" name="vphone" class="bg-gray-50 border border-gray-300" ><br>
+                    <div>
+                        <label for= "vphone">Person's Phone</label><br>
+                        <input type="text" id="vphone" name="vphone" class="bg-gray-50 border border-gray-300" ><br>
+                    </div>
             
                 </section>
                 <section class="mx-10">
@@ -92,16 +125,13 @@
                 </section>
             </section>
         </form>    
+
+        <div class="flex justify-center">
+            <form action="/confirmationpage.html">
+                <button type="submit" class="bg-gray-50 border border-gray-300 my-5 p-5 px-10" >Submit</button>
+            </form>
+        </div>
     </section>
-
-    <div class="flex justify-center">
-        <form action="/confirmationpage.html">
-            <button type="submit" class="bg-gray-50 border border-gray-300 my-5 p-5 px-10" >Submit</button>
-        </form>
-    </div>
-    <footer>
-
-    </footer>
-    
+</div>
 </body>
 </html>
