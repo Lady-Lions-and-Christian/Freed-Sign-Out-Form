@@ -31,13 +31,13 @@
                     <!-- name -->
                     <div>
                         <label for="name">Full Name</label><br>
-                        <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300" ><br>
+                        <input type="text" id="name" name="Name" class="bg-gray-50 border border-gray-300" ><br>
                     </div>
 
                     <!-- gender -->
                     <div>
                         <label for="gender">Gender</label><br>
-                        <select name="gender" id="gender_select" class="bg-gray-50 border border-gray-300" >
+                        <select name="Gender" id="gender_select" class="bg-gray-50 border border-gray-300" >
                             <option value="none"></option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -47,13 +47,13 @@
                     <!-- phone # -->
                     <div>
                         <label for= "phone">Phone</label><br>
-                        <input type="text" id="phone" name="phone" class="bg-gray-50 border border-gray-300" ><br>
+                        <input type="text" id="phone" name="Phone" class="bg-gray-50 border border-gray-300" ><br>
                     </div>
 
                     <!-- dorm -->
                     <div>
                         <label for="dorm">Dorm</label><br>
-                        <select name="dorm" id="dorm_select" class="bg-gray-50 border border-gray-300" >
+                        <select name="Dorm" id="dorm_select" class="bg-gray-50 border border-gray-300" >
                             <option value="none"></option>
                             <option value="scott">Scott Hall</option>
                             <option value="dixon">Dixon Hall</option>
@@ -72,7 +72,7 @@
                     <!-- room # -->
                     <div>
                         <label for="rnumber">Room Number</label><br>
-                        <input type="text" id="rnumber" name="rnumber" class="bg-gray-50 border border-gray-300"  ><br>
+                        <input type="text" id="rnumber" name="Room Number" class="bg-gray-50 border border-gray-300"  ><br>
                     </div>
                 </section>
 
@@ -82,19 +82,19 @@
                     <!-- name -->
                     <div>
                         <label for="cname">Contact Name</label><br>
-                        <input type="text" id="cname" name="cname" class="bg-gray-50 border border-gray-300" ><br>
+                        <input type="text" id="cname" name="Contact Name" class="bg-gray-50 border border-gray-300" ><br>
                     </div>
 
                     <!-- phone # -->
                     <div>
                         <label for= "cphone"> Contact Phone</label><br>
-                        <input type="text" id="cphone" name="cphone" class="bg-gray-50 border border-gray-300" ><br>
+                        <input type="text" id="cphone" name="Contact Phone" class="bg-gray-50 border border-gray-300" ><br>
                     </div>
 
                     <!-- relationship -->
                     <div>
                         <label for= "crelationship">Relationship with Person</label><br>
-                        <input type="text" id="crelationship" name="crelationship" class="bg-gray-50 border border-gray-300" ><br>
+                        <input type="text" id="crelationship" name="Relationship with Person" class="bg-gray-50 border border-gray-300" ><br>
                     </div>
             
                     <!-- add another button -->
@@ -105,25 +105,46 @@
             <section class="traveling-calendar flex flex-col justify-between md:flex-row my-10">
                 <section class="traveling_info mx-10 space-y-3 w-1/2">
                     <h2 class="text-2xl my-5 md:my-0">Traveling Information</h2>
-                    <!-- place -->
+
+                    <!-- address1 -->
                     <div>
-                        <label for= "vplace">Place</label><br>
-                        <input type="text" id="vplace" name="vplace" class="bg-gray-50 border border-gray-300" ><br>
+                        <label for= "vaddress">Address (Street) </label><br>
+                        <input type="text" id="vaddress" name="Address Visiting (Street)" class="bg-gray-50 border border-gray-300" ><br>
                     </div>
-                    <!-- address -->
+
+                    
+                    <!-- address2 -->
                     <div>
-                        <label for= "vaddress">Address</label><br>
-                        <input type="text" id="vaddress" name="vaddress" class="bg-gray-50 border border-gray-300" ><br>
+                        <label for= "vaddress">Address (City, State, Zip) </label><br>
+                        <input type="text" id="vaddress1" name="Address Visiting (City, State, Zip)" class="bg-gray-50 border border-gray-300" ><br>
                     </div>
+
                     <!-- person visiting -->
                     <div>
                         <label for= "vperson">Person Visiting</label><br>
-                        <input type="text" id="vperson" name="vperson" class="bg-gray-50 border border-gray-300" ><br>
+                        <input type="text" id="vperson" name="Person Visiting" class="bg-gray-50 border border-gray-300" ><br>
                     </div>
                     <!-- person phone # -->
                     <div>
                         <label for= "vphone">Person's Phone</label><br>
-                        <input type="text" id="vphone" name="vphone" class="bg-gray-50 border border-gray-300" ><br>
+                        <input type="text" id="vphone" name="Phone Number of Person Visiting" class="bg-gray-50 border border-gray-300" ><br>
+                    </div>
+
+                    <!-- traveling with -->
+                    <div>
+                        <label for="traveling-with">Traveling With</label><br>
+                        <select name="Traveling With" id="travel_select" class="bg-gray-50 border border-gray-300" >
+                            <option value="none"></option>
+                            <option value="family">Family</option>
+                            <option value="friend">Friend</option>
+                            <option value="alone">Alone</option>
+                        </select><br>
+                    </div>
+
+                    <!-- traveling with (none) -->
+                    <div>
+                        <label for= "vperson">If not traveling alone, type name here.</label><br>
+                        <input type="text" id="vperson" name="Person Traveling With" class="bg-gray-50 border border-gray-300" ><br>
                     </div>
             
                 </section>
