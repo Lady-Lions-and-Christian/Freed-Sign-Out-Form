@@ -103,8 +103,8 @@
                 </section>
         
             <section class="traveling-calendar flex flex-col justify-between md:flex-row my-10">
-                <section class="traveling_info mx-10 space-y-3 w-1/2">
-                    <h2 class="text-2xl my-5 md:my-0">Traveling Information</h2>
+                <section class="traveling_info mx-10 space-y-3 w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-2xl my-5">Traveling Information</h2>
 
                     <!-- address1 -->
                     <div>
@@ -143,15 +143,17 @@
 
                     <!-- traveling with (none) -->
                     <div>
-                        <label for= "vperson">If not traveling alone, type name here.</label><br>
+                        <label for= "vperson">If not traveling alone, type name of person traveling with here.</label><br>
                         <input type="text" id="vperson" name="Person Traveling With" class="bg-gray-50 border border-gray-300" ><br>
                     </div>
             
                 </section>
-                <section class="calendar mx-10 my-5 md:my-0 w-1/2">
+                <section class="calendar mx-10 my-5 w-1/2">
                     <!-- calendar for leaving -->  
-                    <h2 class="text-2xl my-5 md:my-0">Calendar</h2>
-                    <p>(in progress)</p>
+                    <h2 class="text-2xl mb-5 space-y-3">Calendar</h2>
+
+                    <label for= "date">Sign Out</label><br>
+                    <input type="date" id="date">
                 </section>
             </section>
 
