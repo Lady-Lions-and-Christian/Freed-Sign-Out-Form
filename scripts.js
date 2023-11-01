@@ -14,3 +14,14 @@ formSubmission.addEventListener("submit", (e) => {
     formSubmission.reset();
 
 })
+
+/*Traveling With Functionality*/
+const optionalBlank = document.querySelector("#travel-select-optional");
+
+// When alone is selected, make optional blank disappear.
+// When alone isn't selected, make optional blank reappear.
+
+//Functions
+function optionalBlankDisplay {
+
+}
