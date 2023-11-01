@@ -21,7 +21,18 @@
 </header>
 <h1 class="font-bold text-3xl text-white py-8 w-[30rem] text-center mx-auto md:w-3/4 md:text-left max-w-[60rem]">Freed-Hardeman Sign Out</h1>
 <section class="entire-form bg-white w-[30rem] md:w-3/4 mx-auto rounded-xl max-w-[60rem]">
-    <h1 class="text-3xl p-8 text-center md:text-left">Sign Out Form</h1>
+    <section class="flex flex-col-2 justify-between p-4">
+        <h1 class="text-3xl mt-10 mx-10 text-center md:text-left">Sign Out Form</h1>
+        <div class="preSaved">
+            <div class="preSaves mt-10 mx-10 text-center md:text-left">
+                <label for="documents">Pre-Saved</label><br>
+                <select name="Document" id="document_select" class="bg-gray-50 border border-gray-300" >
+                    <option value="none"></option>
+                    <option value="defaultNone">No Custom Saves</option>
+                </select><br>
+            </div>
+        </div>
+    </section>
     <p class="border-b-2 mx-10"></p>
     <form action="" id="signout" class="mx-20">
         <section class="personal-info-emergency-section flex flex-col justify-between md:flex-row my-10">
@@ -132,7 +143,7 @@
                 <!-- traveling with -->
                 <div>
                     <label for="traveling-with">Traveling With</label><br>
-                    <select name="Traveling With" id="travel_select" class="bg-gray-50 border border-gray-300" >
+                    <select name="Traveling With" id="travel-select" class="bg-gray-50 border border-gray-300" >
                         <option value="None"></option>
                         <option value="Family">Family</option>
                         <option value="Friend">Friend</option>
@@ -142,8 +153,8 @@
 
                 <!-- traveling with (none) -->
                 <div>
-                    <label for= "vperson">If not traveling alone, type name of person traveling with here.</label><br>
-                    <input type="text" id="vperson" name="Person Traveling With" class="bg-gray-50 border border-gray-300" ><br>
+                    <label for= "travel-select-optional">If not traveling alone, type name of person traveling with here.</label><br>
+                    <input type="text" id="travel-select-optional" name="Person Traveling With" class="bg-gray-50 border border-gray-300" ><br>
                 </div>
         
             </section>
@@ -152,19 +163,18 @@
                 <h2 class="text-2xl">Calendar</h2>
 
                 <div>
-                    <label for= "date">Sign Out Date</label><br>
-                    <input type="date" id="date" class="border-2 p-1">
+                    <label for= "sign-out-date">Sign Out Date</label><br>
+                    <input type="date" id="sign-out-date" name="Sign Out Date" class="border-2 p-1">
                 </div>
                 <div>
-                    <label for= "date">Returning Date</label><br>
-                    <input type="date" id="date" class="border-2 p-1">
+                    <label for= "returning-date">Returning Date</label><br>
+                    <input type="date" id="returning-date" name="Returning Date" class="border-2 p-1">
                 </div>
             </section>
         </section>
 
         <div class="flex justify-center">
-            <!-- <form action="/confirmationpage.html"></form> -->
-            <button type="submit" class="bg-gray-50 border border-gray-300 my-5 p-5 px-10" >Submit</button>
+            <a href="confirmationpage.html" type="submit" class="bg-gray-50 border border-gray-300 my-5 p-5 px-10" >Submit</a>
     </div>
     </form>    
 </section>

@@ -48,3 +48,15 @@ function authenticate(event) {
   }
   
   
+
+/*Traveling With Functionality*/
+const optionalBlank = document.querySelector("#travel-select-optional");
+const choiceSelect = document.querySelector("#travel-select")
+
+// When alone is selected, make optional blank disappear.
+// When alone isn't selected, make optional blank reappear.
+
+//Functions
+function optionalBlankDisplay() {
+
+}
