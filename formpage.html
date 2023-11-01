@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="bg-[url('images/clock.jpg')] bg-no-repeat bg-cover bg-fixed h-screen">
-<header class="header bg-white flex justify-between items-center text-xl p-5 sticky top-0 w-full border-b-slate-400 border-b-gray-300">
+<header class="header bg-white flex justify-between items-center text-xl p-5 sticky top-0 w-full border-b-slate-400 border-b-4">
     <div>
         <img src="images/logo.png" class="w-28" />
     </div>
@@ -19,151 +19,155 @@
         <!-- dorm contact info -->
         <!-- account info -->
 </header>
-<div class="dim-overlay bg-amber-950 bg-opacity-30">
-    <h1 class="font-bold text-3xl text-white py-8 w-[30rem] text-center mx-auto md:w-3/4 md:text-left max-w-[60rem]">Freed-Hardeman Sign Out</h1>
-    <section class="entire-form bg-white w-[30rem] md:w-3/4 mx-auto rounded-xl max-w-[60rem]">
-        <h1 class="text-3xl p-8 text-center md:text-left">Sign Out Form</h1>
-        <p class="border-b-2 mx-10"></p>
-        <form action="" id="signout" class="mx-20">
-            <section class="personal-info-emergency-section flex flex-col justify-between md:flex-row my-10">
-                <section class="personal_info mb-10 md:mb-0 mx-10 space-y-3">
-                    <h2 class="text-2xl my-5 space-x-3">Personal Information</h2>
-                    <!-- name -->
-                    <div>
-                        <label for="name">Full Name</label><br>
-                        <input type="text" id="name" name="Name" class="bg-gray-50 border border-gray-300" ><br>
-                    </div>
+<h1 class="font-bold text-3xl text-white py-8 w-[30rem] text-center mx-auto md:w-3/4 md:text-left max-w-[60rem]">Freed-Hardeman Sign Out</h1>
+<section class="entire-form bg-white w-[30rem] md:w-3/4 mx-auto rounded-xl max-w-[60rem]">
+    <h1 class="text-3xl p-8 text-center md:text-left">Sign Out Form</h1>
+    <p class="border-b-2 mx-10"></p>
+    <form action="" id="signout" class="mx-20">
+        <section class="personal-info-emergency-section flex flex-col justify-between md:flex-row my-10">
+            <section class="personal_info mb-10 md:mb-0 mx-10 space-y-3">
+                <h2 class="text-2xl my-5 space-x-3">Personal Information</h2>
+                <!-- name -->
+                <div>
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="Name" class="bg-gray-50 border border-gray-300" ><br>
+                </div>
 
-                    <!-- gender -->
-                    <div>
-                        <label for="gender">Gender</label><br>
-                        <select name="Gender" id="gender_select" class="bg-gray-50 border border-gray-300" >
-                            <option value="none"></option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select><br>
-                    </div>
+                <!-- gender -->
+                <div>
+                    <label for="gender">Gender</label><br>
+                    <select name="Gender" id="gender_select" class="bg-gray-50 border border-gray-300" >
+                        <option value="none"></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select><br>
+                </div>
 
-                    <!-- phone # -->
-                    <div>
-                        <label for= "phone">Phone</label><br>
-                        <input type="text" id="phone" name="Phone" class="bg-gray-50 border border-gray-300" ><br>
-                    </div>
+                <!-- phone # -->
+                <div>
+                    <label for= "phone">Phone</label><br>
+                    <input type="text" id="phone" name="Phone" class="bg-gray-50 border border-gray-300" ><br>
+                </div>
 
-                    <!-- dorm -->
-                    <div>
-                        <label for="dorm">Dorm</label><br>
-                        <select name="Dorm" id="dorm_select" class="bg-gray-50 border border-gray-300" >
-                            <option value="none"></option>
-                            <option value="Scott">Scott Hall</option>
-                            <option value="Dixon">Dixon Hall</option>
-                            <option value="Bradfield">Bradfield Hall</option>
-                            <option value="Porter-Terry">Porter-Terry Hall</option>
-                            <option value="Tyler">Tyler Hall</option>
-                            <option value="Benson">Benson Hall</option>
-                            <option value="Farrow">Farrow Hall</option>
-                            <option value="Sewell">Sewell Hall</option>
-                            <option value="Paul-Grey">Paul-Grey Hall</option>
-                            <option value="Wooods-East">Woods-East</option>
-                            
-                        </select><br>
-                    </div>
-                    
-                    <!-- room # -->
-                    <div>
-                        <label for="rnumber">Room Number</label><br>
-                        <input type="text" id="rnumber" name="Room Number" class="bg-gray-50 border border-gray-300"  ><br>
-                    </div>
-                </section>
-
-                <section class="emergency_info mx-10 space-y-3">
-                    <h2 class="text-2xl my-5">Emergency Contact Information</h2>
-
-                    <!-- name -->
-                    <div>
-                        <label for="cname">Contact Name</label><br>
-                        <input type="text" id="cname" name="Contact Name" class="bg-gray-50 border border-gray-300" ><br>
-                    </div>
-
-                    <!-- phone # -->
-                    <div>
-                        <label for= "cphone"> Contact Phone</label><br>
-                        <input type="text" id="cphone" name="Contact Phone" class="bg-gray-50 border border-gray-300" ><br>
-                    </div>
-
-                    <!-- relationship -->
-                    <div>
-                        <label for= "crelationship">Relationship to Person</label><br>
-                        <input type="text" id="crelationship" name="Relationship with Person" class="bg-gray-50 border border-gray-300" ><br>
-                    </div>
-            
-                    <!-- add another button -->
-                    
-                    </section>
-                </section>
-        
-            <section class="traveling-calendar flex flex-col justify-between md:flex-row my-10">
-                <section class="traveling_info mx-10 space-y-3 w-1/2 mb-10 md:mb-0">
-                    <h2 class="text-2xl my-5">Traveling Information</h2>
-
-                    <!-- address1 -->
-                    <div>
-                        <label for= "vaddress">Address (Street) </label><br>
-                        <input type="text" id="vaddress" name="Address Visiting (Street)" class="bg-gray-50 border border-gray-300" ><br>
-                    </div>
-
-                    
-                    <!-- address2 -->
-                    <div>
-                        <label for= "vaddress">Address (City, State, Zip) </label><br>
-                        <input type="text" id="vaddress1" name="Address Visiting (City, State, Zip)" class="bg-gray-50 border border-gray-300" ><br>
-                    </div>
-
-                    <!-- person visiting -->
-                    <div>
-                        <label for= "vperson">Person Visiting</label><br>
-                        <input type="text" id="vperson" name="Person Visiting" class="bg-gray-50 border border-gray-300" ><br>
-                    </div>
-                    <!-- person phone # -->
-                    <div>
-                        <label for= "vphone">Person's Phone</label><br>
-                        <input type="text" id="vphone" name="Phone Number of Person Visiting" class="bg-gray-50 border border-gray-300" ><br>
-                    </div>
-
-                    <!-- traveling with -->
-                    <div>
-                        <label for="traveling-with">Traveling With</label><br>
-                        <select name="Traveling With" id="travel_select" class="bg-gray-50 border border-gray-300" >
-                            <option value="None"></option>
-                            <option value="Family">Family</option>
-                            <option value="Friend">Friend</option>
-                            <option value="Alone">Alone</option>
-                        </select><br>
-                    </div>
-
-                    <!-- traveling with (none) -->
-                    <div>
-                        <label for= "vperson">If not traveling alone, type name of person traveling with here.</label><br>
-                        <input type="text" id="vperson" name="Person Traveling With" class="bg-gray-50 border border-gray-300" ><br>
-                    </div>
-            
-                </section>
-                <section class="calendar mx-10 my-5 w-1/2">
-                    <!-- calendar for leaving -->  
-                    <h2 class="text-2xl mb-5 space-y-3">Calendar</h2>
-
-                    <label for= "date">Sign Out</label><br>
-                    <input type="date" id="date">
-                </section>
+                <!-- dorm -->
+                <div>
+                    <label for="dorm">Dorm</label><br>
+                    <select name="Dorm" id="dorm_select" class="bg-gray-50 border border-gray-300" >
+                        <option value="none"></option>
+                        <option value="Scott">Scott Hall</option>
+                        <option value="Dixon">Dixon Hall</option>
+                        <option value="Bradfield">Bradfield Hall</option>
+                        <option value="Porter-Terry">Porter-Terry Hall</option>
+                        <option value="Tyler">Tyler Hall</option>
+                        <option value="Benson">Benson Hall</option>
+                        <option value="Farrow">Farrow Hall</option>
+                        <option value="Sewell">Sewell Hall</option>
+                        <option value="Paul-Grey">Paul-Grey Hall</option>
+                        <option value="Wooods-East">Woods-East</option>
+                        
+                    </select><br>
+                </div>
+                
+                <!-- room # -->
+                <div>
+                    <label for="rnumber">Room Number</label><br>
+                    <input type="text" id="rnumber" name="Room Number" class="bg-gray-50 border border-gray-300"  ><br>
+                </div>
             </section>
 
-            <div class="flex justify-center">
-                <!-- <form action="/confirmationpage.html"></form> -->
-                <button type="submit" class="bg-gray-50 border border-gray-300 my-5 p-5 px-10" >Submit</button>
-        </div>
-        </form>    
-    </section>
-</div>
+            <section class="emergency_info mx-10 space-y-3">
+                <h2 class="text-2xl my-5">Emergency Contact Information</h2>
+
+                <!-- name -->
+                <div>
+                    <label for="cname">Contact Name</label><br>
+                    <input type="text" id="cname" name="Contact Name" class="bg-gray-50 border border-gray-300" ><br>
+                </div>
+
+                <!-- phone # -->
+                <div>
+                    <label for= "cphone"> Contact Phone</label><br>
+                    <input type="text" id="cphone" name="Contact Phone" class="bg-gray-50 border border-gray-300" ><br>
+                </div>
+
+                <!-- relationship -->
+                <div>
+                    <label for= "crelationship">Relationship to Person</label><br>
+                    <input type="text" id="crelationship" name="Relationship to Person" class="bg-gray-50 border border-gray-300" ><br>
+                </div>
+        
+                <!-- add another button -->
+                
+                </section>
+            </section>
+    
+        <section class="traveling-calendar flex flex-col justify-between md:flex-row my-10">
+            <section class="traveling_info mx-10 space-y-3 w-1/2 mb-10 md:mb-0">
+                <h2 class="text-2xl my-5">Traveling Information</h2>
+
+                <!-- address1 -->
+                <div>
+                    <label for= "vaddress">Address (Street) </label><br>
+                    <input type="text" id="vaddress" name="Address Visiting (Street)" class="bg-gray-50 border border-gray-300" ><br>
+                </div>
+
+                
+                <!-- address2 -->
+                <div>
+                    <label for= "vaddress">Address (City, State, Zip) </label><br>
+                    <input type="text" id="vaddress1" name="Address Visiting (City, State, Zip)" class="bg-gray-50 border border-gray-300" ><br>
+                </div>
+
+                <!-- person visiting -->
+                <div>
+                    <label for= "vperson">Person Visiting</label><br>
+                    <input type="text" id="vperson" name="Person Visiting" class="bg-gray-50 border border-gray-300" ><br>
+                </div>
+                <!-- person phone # -->
+                <div>
+                    <label for= "vphone">Person's Phone</label><br>
+                    <input type="text" id="vphone" name="Phone Number of Person Visiting" class="bg-gray-50 border border-gray-300" ><br>
+                </div>
+
+                <!-- traveling with -->
+                <div>
+                    <label for="traveling-with">Traveling With</label><br>
+                    <select name="Traveling With" id="travel_select" class="bg-gray-50 border border-gray-300" >
+                        <option value="None"></option>
+                        <option value="Family">Family</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Alone">Alone</option>
+                    </select><br>
+                </div>
+
+                <!-- traveling with (none) -->
+                <div>
+                    <label for= "vperson">If not traveling alone, type name of person traveling with here.</label><br>
+                    <input type="text" id="vperson" name="Person Traveling With" class="bg-gray-50 border border-gray-300" ><br>
+                </div>
+        
+            </section>
+            <section class="calendar flex flex-col mx-10 my-5 space-y-3 w-1/2">
+                <!-- calendar for leaving -->  
+                <h2 class="text-2xl">Calendar</h2>
+
+                <div>
+                    <label for= "date">Sign Out Date</label><br>
+                    <input type="date" id="date" class="border-2 p-1">
+                </div>
+                <div>
+                    <label for= "date">Returning Date</label><br>
+                    <input type="date" id="date" class="border-2 p-1">
+                </div>
+            </section>
+        </section>
+
+        <div class="flex justify-center">
+            <!-- <form action="/confirmationpage.html"></form> -->
+            <button type="submit" class="bg-gray-50 border border-gray-300 my-5 p-5 px-10" >Submit</button>
+    </div>
+    </form>    
+</section>
 <div class="pt-10"></div>
 
 <script src="scripts.js"></script>
