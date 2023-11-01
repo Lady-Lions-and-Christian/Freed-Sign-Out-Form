@@ -16,8 +16,8 @@ formSubmission.addEventListener("submit", (e) => {
 })
 
 function authenticate(formData) {
-    const usernameInput = formData.username;
-    const passwordInput = formData.password;
+    const enteredUsername = formData.username;
+    const enteredPassword = formData.password;
     const message = document.getElementById("message");
   
     // Read the JSON file with user data
