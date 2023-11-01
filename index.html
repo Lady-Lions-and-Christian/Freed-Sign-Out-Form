@@ -13,13 +13,13 @@
     
             <img class="w-28 pb-3 text-left" src="images/logo.png">
             <div class="p-2">
-                <label class="font-semibold" for="cname">Username:</label><br>
-                <input class="bg-gray-50 border text-xl border-gray-300" type="text" id="cname" name="cname"><br>
+                <label class="font-semibold" for="uname">Username:</label><br>
+                <input class="bg-gray-50 border text-xl border-gray-300" type="text" id="username" name="uname"><br>
             </div>
     
             <div class="p-2 pb-4">
-                <label class="font-semibold" for="cname">Password:</label><br>
-                <input class="bg-gray-50 border text-xl border-gray-300" type="text" id="cname" name="cname"><br>
+                <label class="font-semibold" for="pass">Password:</label><br>
+                <input class="bg-gray-50 border text-xl border-gray-300" type="text" id="password" name="pass"><br>
             </div>
 
             <div class="flex flex-row justify-between p-3">
@@ -31,14 +31,14 @@
     
                     <a class="underline" href="url">Forgot Password</a>
                 </div>
-                <form class="text-center p-3 px-7 mx-3 bg-red-950 rounded-md" action="/formpage.html">
-                    <button type="submit" class="text-white" >Log In</button>
+                <form class="text-center p-3 px-7 mx-3 bg-red-950 rounded-md" >
+                    <button type="button" class="text-white" onclick="login()">Log In</button>
                 </form>
             </div>
             
         </div>
 
     </div>
-
+    <script src="login.js"></script>
 </body>
 </html>
