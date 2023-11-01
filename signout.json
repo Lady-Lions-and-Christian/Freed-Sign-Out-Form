@@ -1,5 +1,5 @@
-[{"FName":"Kaylee","LName":"Odom","Email":"kaylee.odom@students.fhu.edu","Password\r":"1111\r"},
-{"FName":"Avery","LName":"Harris","Email":"avery.harris@students.fhu.edu","Password\r":"2222\r"},
-{"FName":"Priscilla","LName":"Harris","Email":"priscilla.harris@students.fhu.edu","Password\r":"3333\r"},
-{"FName":"Abbie","LName":"Vance","Email":"abbie.vance@students.fhu.edu","Password\r":"4444\r"},
-{"FName":"Christian","LName":"Stackpole","Email":"christian.stackpole@students.fhu.edu","Password\r":"5555"}]
+[{"FName":"Kaylee","LName":"Odom","username":"kaylee.odom@students.fhu.edu","password":"1111\r"},
+{"FName":"Avery","LName":"Harris","username":"avery.harris@students.fhu.edu","password":"2222\r"},
+{"FName":"Priscilla","LName":"Harris","username":"priscilla.harris@students.fhu.edu","password":"3333\r"},
+{"FName":"Abbie","LName":"Vance","username":"abbie.vance@students.fhu.edu","password":"4444\r"},
+{"FName":"Christian","LName":"Stackpole","username":"christian.stackpole@students.fhu.edu","password":"5555"}]
