@@ -15,21 +15,16 @@ formSubmission.addEventListener("submit", (e) => {
 
 })
 
-function authenticate(event) {
-    event.preventDefault();
-    
-    const usernameInput = document.getElementById("username");
-    const passwordInput = document.getElementById("password");
+function authenticate(formData) {
+    const usernameInput = formData.username;
+    const passwordInput = formData.password;
     const message = document.getElementById("message");
-  
-    const enteredUsername = usernameInput.value;
-    const enteredPassword = passwordInput.value;
   
     // Read the JSON file with user data
     fetch("signout.json")
       .then(response => response.json())
       .then(data => {
-        const users = data.users;
+        const users = data;
         const user = users.find(u => u.username === enteredUsername && u.password === enteredPassword);
   
         if (user) {
@@ -45,9 +40,7 @@ function authenticate(event) {
         console.error("Error reading JSON file: " + error);
         message.textContent = "An error occurred while processing your request.";
       });
-  }
-  
-  
+}
 
 /*Traveling With Functionality*/
 const optionalBlank = document.querySelector("#travel-select-optional");
@@ -58,5 +51,4 @@ const choiceSelect = document.querySelector("#travel-select")
 
 //Functions
 function optionalBlankDisplay() {
-
 }
