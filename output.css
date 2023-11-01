@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -687,19 +687,9 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.border-b-gray-300 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
 .border-b-slate-400 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(148 163 184 / var(--tw-border-opacity));
-}
-
-.bg-amber-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(69 26 3 / var(--tw-bg-opacity));
 }
 
 .bg-gray-50 {
@@ -717,10 +707,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-30 {
-  --tw-bg-opacity: 0.3;
-}
-
 .bg-\[url\(\'images\/clock\.jpg\'\)\] {
   background-image: url('images/clock.jpg');
 }
@@ -735,6 +721,10 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .p-10 {
@@ -755,10 +745,6 @@ video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .p-4 {
@@ -806,6 +792,10 @@ video {
   padding-top: 11rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -840,11 +830,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .text-red-500 {
