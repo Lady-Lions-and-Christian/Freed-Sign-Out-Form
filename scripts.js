@@ -19,8 +19,18 @@ formSubmission.addEventListener("submit", (e) => {
 /*Traveling With Functionality*/
 const optionalBlank = document.querySelector("#travel-select-optional");
 const choiceSelect = document.querySelector("#travel-select")
+const travelWithLabel = document.getElementById("travel-optional-label");
 
 // When alone is selected, make optional blank disappear.
+choiceSelect.addEventListener("change", function(){
+    if(choiceSelect.value === "Alone") {
+        travelWithLabel.style.display = "none";
+        optionalBlank.style.display = "none";
+    } else{
+        travelWithLabel.style.display = "block";
+        optionalBlank.style.display = "block";
+    }
+})
 // When alone isn't selected, make optional blank reappear.
 
 //Functions
