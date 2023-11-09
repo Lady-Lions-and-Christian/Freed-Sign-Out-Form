@@ -22,6 +22,7 @@ const choiceSelect = document.querySelector("#travel-select")
 const travelWithLabel = document.getElementById("travel-optional-label");
 
 // When alone is selected, make optional blank disappear.
+// When alone isn't selected, make optional blank reappear.
 choiceSelect.addEventListener("change", function(){
     if(choiceSelect.value === "Alone") {
         travelWithLabel.style.display = "none";
@@ -31,7 +32,6 @@ choiceSelect.addEventListener("change", function(){
         optionalBlank.style.display = "block";
     }
 })
-// When alone isn't selected, make optional blank reappear.
 
 //Functions
 function optionalBlankDisplay() {
