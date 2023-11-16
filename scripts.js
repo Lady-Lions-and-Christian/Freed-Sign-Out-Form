@@ -9,8 +9,7 @@ formSubmission.addEventListener("submit", (e) => {
     const jsonFormData = JSON.stringify(objectFormData);
     localStorage.setItem('form', jsonFormData);
 
-    //window.location.href = "confirmationpage.html";
-    authenticate(objectFormData);
+    window.location.href = "confirmationpage.html";
 
     formSubmission.reset();
 
